@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+
+.homeBody {
+  display: flex;
+  margin: 0 30px;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Vidaloka", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.homeBodyLeft p {
+  font-size: 1.4rem;
+}
+.homeBodyLeft h1 {
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+p > .hl {
+  color: red;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+/* //right part of homeBody */
+.homeBodyRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boxOfResume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image .img1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  box-shadow: -8px -3px 6px 0px red;
+}
+
+.boxOfResume h3 {
+  font-weight: normal;
+  font-size: 2rem;
+}
+.boxOfResume img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 992px) {
+  .homeBody {
+    flex-direction: column;
+  }
+}
