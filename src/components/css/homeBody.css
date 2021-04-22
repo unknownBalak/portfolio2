@@ -57,5 +57,8 @@ p > .hl {
 @media (max-width: 992px) {
   .homeBody {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
