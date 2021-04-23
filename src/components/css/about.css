@@ -5,7 +5,7 @@
   color: black;
   font-family: "Vidaloka", serif;
   display: block;
-  padding-top: 20px;
+  padding-top: 10px;
   min-height: 100vh;
   position: relative;
 }
@@ -43,9 +43,6 @@
     flex-direction: column;
   }
 
-  .title span {
-    /* font-size: 1rem; */
-  }
   .title .hr {
     width: 100%;
     margin: 10px;
@@ -81,9 +78,14 @@
   }
 }
 /* decorating academic part */
+.education {
+  padding-left: 20px;
+}
 .academic {
   font-size: 1.5rem;
   font-weight: 600;
+  border-left: 3px solid black;
+  padding-left: 10px;
 }
 .academic p:nth-child(1),
 .academic p:nth-child(2) {
@@ -102,4 +104,5 @@
   padding: 5px;
   background-color: aquamarine;
   border-radius: 20px;
+  z-index: 1;
 }

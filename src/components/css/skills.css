@@ -1,6 +1,49 @@
 .skills {
   min-height: 100vh;
-  background-color: bisque;
-  color: black;
+  color: white;
   position: relative;
+  background-color: #424e4e;
+  display: flex;
+  flex-direction: column;
+}
+.skills::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 100vh solid rgba(255, 255, 255, 0);
+  border-top: 100vh solid rgba(255, 255, 255, 0);
+  border-right: 100vh solid #f35726;
+  border-bottom: 100vh solid #f35726;
+  z-index: 0;
+}
+.skill {
+  z-index: 4;
+  transition: all 0.2s;
+}
+.skills h1 {
+  font-size: 3rem;
+  text-align: center;
+  z-index: 10;
+}
+.achievement {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.achievementTitle {
+  border-bottom: 5px solid red;
+  padding: 6px;
+  font-size: 2rem;
+  z-index: 10;
+}
+.skill img {
+  height: 150px;
+  width: 150px;
+}
+.skill img:hover {
+  transform: scale(1.1);
 }
