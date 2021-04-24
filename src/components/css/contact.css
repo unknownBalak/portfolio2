@@ -1,6 +1,99 @@
 .contacts {
   min-height: 100vh;
   color: black;
-  background-color: rgb(126, 201, 97);
+  background-color: #eee2e2;
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.contactBody {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contactForm {
+  width: 100%;
+  position: relative;
+}
+.title h1 {
+  background-color: #faf8f9;
+  border-radius: 10px;
+  padding: 6px 40px;
+  color: #f40084;
+}
+.form {
+  padding: 20px;
+  padding: 20px;
+}
+.contactForm .hl {
+  font-size: 4em;
+  color: white;
+  text-align: center;
+}
+.form > form > div > .label {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+.form > form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  margin: auto;
+  max-width: 100%;
+  color: black;
+}
+.form > form > div > .btn {
+  margin-top: 20px;
+  height: 50px;
+  width: 160px;
+  font-size: 18px;
+  border: 2px solid;
+}
+.form > form > div > input,
+.form > form > div > textarea {
+  width: 350px;
+  max-width: 100%;
+  border: 0;
+  padding: 5px;
+  border-radius: 10px;
+}
+.form > form > div > input {
+  height: 40px;
+}
+.button {
+  background-color: #047dc0;
+  color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 5px 30px;
+  font-size: 20px;
+  border: none;
+}
+.button.active {
+  box-shadow: 2px 2px 13px 3px grey;
+}
+.contactRightSide .box {
+  border: 2px solid black;
+  padding: 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.contactRightSide .socialLink > p {
+  padding: 0;
+  margin-top: 0;
+  font-weight: bolder;
+  color: red;
+}
+@media (max-width: 992px) {
+  .contactBody {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 }
